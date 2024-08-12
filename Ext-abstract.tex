@@ -1,17 +1,46 @@
 \section{Background}
 
-The project paves the way for the potential users from non-traditional HPC disciplines and non-HPC disciplines to tap into HPC resources for their potential data analysis, modeling, and simulation needs while remaining relevant for beginners from the traditional HPC disciplines.
-
+HPC Carpentry~\cite{HPCC-website} is an informal training project with a mission to provide a set of lessons aimed at introducing the basic ``know-how'' of running applications on high-performance computing (HPC) resources to new audiences, including investigators from fields which are not traditional users of HPC systems, as well as novice users from fields in which HPC is commonly used.
+Eventually, the projet's goal is to empower HPC novices to effectively leverage HPC to solve scientific and technical problems in their respective domains.
+The project paves the way for the potential users from non-traditional HPC disciplines to tap into HPC resources for their data analysis, modeling, and simulation needs while remaining relevant for beginners from the traditional HPC disciplines.
 The current project is the product of significant work over the past several years, incorporating valuable materials from many contributors.
+
+
+
+\section{Lesson Development Efforts}
+
+The recent focus of HPC Carpentry has been the development a complete workshop program for new HPC users.
+We begin with an introduction to the command-line shell using Software Carpentry's Unix Shell lesson~\cite{SwC-UNIX-Shell_v3},
+followed by our Introduction to High Performance Computing lesson~\cite{HPCC_hpc-intro}, covering remote access and resource management.
+We end with a newly developed lesson on HPC workflow management~\cite{HPCC_hpc-workflows}, which walks learners through the specification and execution of a scaling study on an HPC system, emphasizing both the benefits and limitations of HPC systems for domain applications. 
+This set of three lessons is sufficient to offer a two-day hands-on workshop in a format similar to that of the Software Carpentry or Data Carpentry workshops.
+
+The project plans to develop more advanced training resources for HPC developers, which will give workshop instructors the option to substitute the workflow lesson with a coding exercise in a parallel framework (such as MPI), for example.
+Several lessons had also been developed in the past, including an introduction of parallel programming using the Chapel programming language.
+Furthermore, we have received engagement from HPC community members at large who explore the potential of merging their in-house lessons into HPC Carpentry's lesson portfolio.
+This is still an ongoing effort and engagement with the community.
+
 
 \section{Recent Workshops}
 
-Previous workshops were held at Lawrence Livermore National Laboratory, University College Dublin, Brac University, Helmholtz Einstein International Berlin Research School in Data Science (HEIBRiDS), University of Mauritius, Florida International University, Delft University of Technology, National Institute of Standards and Technology, and EPFL CECAM.
+The complete HPC Carpentry workshop program for new users was recently offered at the Lawrence Livermore National Laboratory in June of 2024.
+Previous workshops were held at University College Dublin, Brac University, Helmholtz Einstein International Berlin Research School in Data Science (HEIBRiDS), University of Mauritius, Florida International University, Delft University of Technology, National Institute of Standards and Technology, and EPFL CECAM.
+\textbf{FIXME: Can we say briefly what the same things about these workshops and what we learned after offering these workshops?}
+
+One of the important issue we are facing in offering HPC Carpentry workshops is the need for HPC infrastructure for learners to use during the workshop.
+While some HPC site operators have their own HPC systems to conduct their own workshop, others, particularly from under-resourced institutions, do not have their own HPC resources.
+We have attempted to create a small HPC Carpentry cluster in the cloud.
+More recently, we have acquired support from Jetstream 2 through ACCESS to set up a ``standard'' reference HPC Carpentry cluster in a virtual-machine-based environment.
+The cluster set-up has been prepared in an automated fashion using Terraform scripting.
+This effort could pave the way to allow instructors to set their own clusters, irrespective of the existence of a local HPC cluster in their own institution.
 
 
 \section{Incubation to the Carpentries Lesson Program}
 
+In a major milestone, the steering committee is leading the project through the formal incubation process towards becoming an official Carpentries lesson program alongside the existing Software, Data, and Library Carpentry programs.
+This process is expected to last for about 18 months, with an expected target date of December 2025.
+
 
 \section{Acknowledgment}
 
-We acknowledge the support of HPC infrastructure hosted on NSF Jetstream 2 system. Allocation to Jetstream 2 was provided through ACCESS.
+We acknowledge the infrastructure support hosted on Jetstream 2 cloud environment. Allocation to Jetstream 2 was provided through ACCESS, which is funded by the US National Science Foundation.
